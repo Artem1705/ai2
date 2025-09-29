@@ -44,6 +44,8 @@ namespace Titov_32_1_AI
                 tmpStr += " " + inputPixels[i].ToString();
             }
             tmpStr += "\n";
+            File.AppendAllText(path, tmpStr);
         }
     }
 }
+
