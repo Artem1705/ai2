@@ -17,8 +17,8 @@ namespace Titov_32_1_AI
         public FormMain()
         {
             InitializeComponent();
-
             inputPixels = new double[15];
+            inputPixels = inputPixels.Select(x => x = 1).ToArray();
         }
         private void Changing_State_Pixel_Button_Click(object sender, EventArgs e)
         {
@@ -48,4 +48,5 @@ namespace Titov_32_1_AI
         }
     }
 }
+
 
