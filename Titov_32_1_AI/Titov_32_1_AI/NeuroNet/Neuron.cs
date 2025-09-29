@@ -30,6 +30,15 @@ namespace Titov_32_1_AI.NeuroNet
             {
                 sum += inputs[j] * weights[j + 1];
             }
+            public static double Logist(double x)
+            {
+                return 1.0 / (1.0 + Math.Exp(-x));
+            }
+            public static double Logist_Derivator(double x)
+            {
+                double sig = Sigmoid(x);
+                return sig * (1 - sig);
+            }
             switch (type)
             {
                 case NeuronType.Hidden:
@@ -43,3 +52,4 @@ namespace Titov_32_1_AI.NeuroNet
         }
     }
 }
+
