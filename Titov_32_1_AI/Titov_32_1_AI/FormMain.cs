@@ -37,7 +37,7 @@ namespace Titov_32_1_AI
         private void ButtonSaveTrainSample_Click(object sender, EventArgs e)
         {
             string path = AppDomain.CurrentDomain.BaseDirectory + "train.txt";
-            string tmpStr = numericUpDown_NecessaryOutput.Value.ToSring();
+            string tmpStr = numericUpDown1.Value.ToSring();
 
             for(int i = 0; i < inputPixels.Length; i++)
             {
@@ -48,5 +48,6 @@ namespace Titov_32_1_AI
         }
     }
 }
+
 
 
